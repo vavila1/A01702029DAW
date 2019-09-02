@@ -1,31 +1,31 @@
 #header-section{
-background-image: url("Futbol2.jpg");
+background-image: url("imagenes/Futbol2.jpg");
 height:300px;
 }
 #main-navbar{
 justify-content: initial;
 }
 #section1 {
-padding-top:100px;
-height:330px;
+padding-top:75px;
+height:350px;
 color: #fff; 
 background-color:#A50044;
 }
 #section2 {
-padding-top:100px;
-height:250px;
+padding-top:75px;
+height:350px;
 color: #fff; 
 background-color: #FB090B;
 }
 #section3 {
-padding-top:100px;
-height:500px;
+padding-top:75px;
+height:350px;
 color: #fff; 
 background-color:#6CABDD;
 }
 #section4 {
-padding-top:100px;
-height:500px;
+padding-top:75px;
+height:350px;
 color: #fff; 
 background-color: #FF0101;
 
