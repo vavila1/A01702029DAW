@@ -1,13 +1,36 @@
 <!DOCTYPE html>
-<html lang="es">
-    <head>
-        <meta charset="utf-8" />
-        <title>Lab9A01702029</title>
-    </head>
-    <body>
-        <h1>Promedio</h1>
-        <div>
-        	<?php
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Lab9A01702029</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style_copia.css">
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.bundle.js"></script>
+</head>
+<body data-spy="scroll" data-target="#main-navbar" data-offset="70">
+	<header id="header-section" class="container-fluid">
+	</header>
+	<nav id="main-navbar" class="navbar fixed-top navbar-dark bg-dark">
+	 	<a class="navbar-brand" href="#"><img height="50px"></a>
+	 	<ul class="nav nav-pills">
+	  		<li class="nav-item">
+	   			<a class="nav-link" href="#section1">Promedio</a>
+	  		</li>
+	  		<li class="nav-item">
+	   			<a class="nav-link" href="#section2">Tabla</a>
+	  		</li>
+	  		<li class="nav-item">
+	   			<a class="nav-link" href="#section3">Listas</a>
+	  		</li>
+	  		<li class="nav-item">
+	   			<a class="nav-link" href="#section4">Mediana</a>
+	  		</li>
+	 	</ul>
+	</nav>
+	<div id="section1" class="container-fluid">
+		<h1>Promedio</h1>
+	 	<p><?php
         	$numeros=array(2,6,10,3,5);
 $sumas=suma($numeros);
 echo "El promedio del: ",print_r($numeros)," es: ",$sumas;
@@ -17,11 +40,11 @@ function suma($num){
 		$sum = $sum+$val;
 	}return $sum/5;
 }
-        	?>
-        </div>
-        <h1> Tabla</h1>
-        <div>
-        <?php
+        	?></p>
+	</div>
+	<div id="section2" class="container-fluid">
+		<h1>Tabla</h1>
+	 	<p><?php
         function tabla(){
 	$intNum = 1;
 	echo"<table align=center width=80% border=1 cellspacing=0 cellpading=2>";
@@ -42,11 +65,11 @@ function suma($num){
 
 	}echo"</table>";
 } tabla();
-        ?>
-    </div>
-    <h1> Listas</h1>
-    <div>
-    	<?php
+        ?></p>
+	</div>
+	<div id="section3" class="container-fluid">
+	 	<h1>Listas</h1>
+	 	<p><?php
         	$numeros=array(2,6,10,3,5);
         	$sumas1=suma2($numeros);
         	function suma2($num){
@@ -62,10 +85,11 @@ function suma($num){
         	rsort($numeros);
         	echo"<li>".print_r($numeros),"</li>";
         	echo"</ul>";
-        	?>
-    </div>
-    <h1>Mediana</h1>
-    <?php
+        	?></p>
+	</div>
+	<div id="section4" class="container-fluid">
+		<h1>Mediana</h1>
+	 	<p><?php
         	$arreglo=array(2,6,10,3,5,4);
         	sort($arreglo);
         	$cantidad=count($arreglo);
@@ -79,6 +103,7 @@ function suma($num){
         		$cantidad2=$cantidad/2;
         		echo"La mediana del arreglo es: ",$arreglo[$cantidad2];
         	}
-    ?>
-    </body>
+    ?></p>
+	</div>
+	</body>
 </html>
