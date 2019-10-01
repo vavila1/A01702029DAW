@@ -1,0 +1,28 @@
+.bodylog{
+	font-style: 'Roboto';
+	background-image: url(images/back.jpg);
+	background-size: cover;
+	height: 64.6em;
+	margin-top: 0;
+}
+
+
+.login .card{
+	background: rgba(0, 20,35,.8);
+	margin-top: 9em;
+}
+
+label{
+	font-size: 1.2em;
+	color: white;
+  	padding-left: 1em;
+}
+
+input{
+	color: white;
+  	text-align: left;
+}
+
+.ciasa{
+  background: #002e5d;
+}

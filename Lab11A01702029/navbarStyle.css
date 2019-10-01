@@ -1,0 +1,77 @@
+.sidebar {
+  height: 100%;
+  width: 14em;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #032140;
+  overflow-x: hidden;
+  padding-top: 1em;
+}
+
+.sidebar a, .dropdown-btn{
+  padding: 2.5em 1em .5em 1.1em;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+.sidebar a:hover {
+  color: rgb(41, 117, 193) ;
+}
+
+
+/* DropDown */
+.sidebar a:hover, .dropdown-btn:hover {
+  color: #74AEE2;
+}
+
+.active {
+  color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: #002e5d;
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+.carta{
+   margin-left: 15em;
+   width: 50em;
+   height: 10em;
+}
+
+.carta2{
+   margin-left: 50em;
+   width: 50em;
+   height: 10em;
+   margin-top: 0em;
+   padding-top: 0;
+   top: 0;
+}

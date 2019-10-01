@@ -1,0 +1,28 @@
+<div class="row">
+	<div class="col s4">
+	</div>
+	<div class="col s8">
+		<h2> Preguntas PHP Laboratorio 11 </h2>
+    <h5>¿Por qué es importante hacer un session_unset() y luego un session_destroy()?</h5>
+
+   <p>Según mi comprensión de la lectura de tutorials point.<a href="https://www.tutorialspoint.com/php/php_sessions.htm">[1]</a> Sobre session_unset() y session_destroy, la primer instrucción se ejecuta para borrar información de una o más variables en específico y la segunda instrucción destruye la sesión.
+   Para hacer un logout es importante eliminar todos los datos temporales de las variables y despues eliminar la sesión para así evitar que se filtre información de ésta.
+   </p>
+
+    <h5>¿Cuál es la diferencia entre una variable de sesión y una cookie?</h5>
+    <p>Según idesweb <a href="http://idesweb.es/proyecto/proyecto-prac09-php-cookies-sesiones">[2]</a> Una cookie es un fragmento de información que un navegador web almacena. Estos archivos se guardan en el disco duro del visitante web. En cambio una sesión, guarda la información del visitante en el servidor.</p>
+    
+    <h5>¿Qué técnicas se utilizan en sitios como facebook para que el usuario no sobreescriba sus fotos en el sistema de archivos cuando sube una foto con el mismo nombre?</h5>
+    <p>El algoritmo confirma que los datos o variables de la sesión sean distintas.</p>
+
+   <h5>¿Qué es CSRF y cómo puede prevenirse?</h5>
+   <p>Según Ignacio Pérez, en la pagina de welivesecurity<a href="https://www.welivesecurity.com/la-es/2015/04/21/vulnerabilidad-cross-site-request-forgery-csrf/">[3]</a> explica como falsificación de petición en sitios cruzados o sus siglas en inglés (CSRF) un ataque que fuerza al navegador web, validando en algún servicio como el correo a enviar una petición a una aplicación web vulnerable. Ésta realiza la acción elegida a través del usuario. Esta técnica explota la confianza de un sitio web hacia sus usuarios.
+   Para prevenir este ataque, se puede usar un identificador unico de sesión de usuario o comunmente llamada token que se esté revisando constantemente. Los bancos utilizan esta técnica en compras en linea.
+
+    </p>
+    <h5>
+    	Nota: Mi compañero Jorge y yo nos reunimos para hacer de manera conjunta y poder ir agregando parte de nuestro proyecto en los labs. Así reducir el tiempo invertido en dos actividades distintas y "matar 2 pajaros de un tiro".
+    </h5>
+	</div>
+	
+</div>
